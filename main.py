@@ -1,5 +1,6 @@
-word = input('Введіть слово: ')
-if word == word[::-1]:
-    print('Це слово є паліндромом')
-else:
-    print('Це слово не являється паліндромом')
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+parni = []
+for i in numbers:
+    if i % 2 == 0:
+        parni.append(i)
+print('Список парних чисел:', parni)
