@@ -1,11 +1,10 @@
-class Book:
-    def __init__(self, title, author):
-        self.title = title
-        self.author = author
-    def get_info(self):
-        print("Назва: ", self.title)
-        print("Автор: ", self.author)
-book1 = Book("Війна і мир", "Лев Толстой")
-book1.get_info()
-book2 = Book("Гра Престолів", "Джордж Мартін")
-book2.get_info()
+class Animal:
+    def __init__(self, name, sound):
+        self.name = name
+        self.sound = sound
+    def make_sound(self):
+        print(f"{self.name} говорить {self.sound}")
+cat = Animal("Кіт", "Мяу")
+dog = Animal("Собака", "Гав")
+cat.make_sound()
+dog.make_sound()
