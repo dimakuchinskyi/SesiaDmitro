@@ -1,6 +1,5 @@
-start = int(input("Введіть початкове число: "))
-end = int(input("Введіть кінцеве число: "))
-sum_of_range = 0
-for num in range(start + 1, end):
-    sum_of_range += num
-print("Сума діапазону чисел:", sum_of_range)
+sum = 0
+for number in range(1, 101):
+    if number % 2 == 0:
+        sum += number
+print("Сума парних чисел від 1 до 100: ", sum)
