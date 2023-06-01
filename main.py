@@ -1,3 +1,5 @@
-ryadok = input("Введіть рядок: ")
-for letter in ryadok:
-    print(letter)
+word = input('Введіть слово: ')
+if word == word[::-1]:
+    print('Це слово є паліндромом')
+else:
+    print('Це слово не являється паліндромом')
