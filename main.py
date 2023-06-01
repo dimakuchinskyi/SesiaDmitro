@@ -1,12 +1,9 @@
-def filter_capitalized_strings(strings):
-    filtered_strings = []
-    for string in strings:
-        if string[0].isupper():
-            filtered_strings.append(string)
-    return filtered_strings
-user_input = input("Введіть рядки, розділені пробілами: ")
-input_list = user_input.split()
-filtered_list = filter_capitalized_strings(input_list)
-print("Результат:")
-for string in filtered_list:
-    print(string)
+def filter_python_strings(string_list):
+    python_strings = []
+    for string in string_list:
+        if 'Python' in string:
+            python_strings.append(string)
+    return python_strings
+user_strings = ['Python чудова мова програмування', 'Я люблю мову програмування Python', 'Джава також чудова мова програмування']
+filtered_strings = filter_python_strings(user_strings)
+print(filtered_strings)
