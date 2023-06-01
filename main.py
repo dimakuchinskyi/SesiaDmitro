@@ -1,9 +1,9 @@
-def filter_python_strings(string_list):
-    python_strings = []
-    for string in string_list:
-        if 'Python' in string:
-            python_strings.append(string)
-    return python_strings
-user_strings = ['Python чудова мова програмування', 'Я люблю мову програмування Python', 'Джава також чудова мова програмування']
-filtered_strings = filter_python_strings(user_strings)
-print(filtered_strings)
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def get_info(self):
+        print("Ім'я:", self.name)
+        print("Вік:", self.age)
+student1 = Student("Глеп", 20)
+student1.get_info()
